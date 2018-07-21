@@ -1,11 +1,10 @@
-#4d
+# 4d
+
 
 import sys
-sys.path.insert(0, '/Users/lemonswilliams/Documents/DSC 510/Week 6/msds510/src/msds510/')
-
 import util
-
-
+sys.path.insert(0, '/Users/lemonswilliams/'
+                   'Documents/DSC 510/Week 6/msds510/src/msds510/')
 
 records = [
                 dict(year='1988', intro='Jun-88'),
@@ -16,10 +15,9 @@ records = [
                 ]
 
 for x in records:
-    print("Input Record - ",x)
-    print("Date joined - ", util.get_date_joined(x['year'],x['intro']))
-    print("Days since joined - ", util.days_since_joined(x['year'],x['intro']))
+    print("Input Record - ", x)
+    print("Date joined - ",
+          util.get_date_joined(x['year'], x['intro']))
+    print("Days since joined - ",
+          util.days_since_joined(x['year'], x['intro']))
     print()
-
-
-
