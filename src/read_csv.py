@@ -4,7 +4,9 @@ input1 = sys.argv[1]
 
 
 def main(input1):
-    with open(input1, 'r') as c:
+    """The main function within this file takes a csv and reads it into rows.
+    The function takes one argument, the directory of the csv file."""
+    with open(input1,'r') as c:
         rows = c.readlines()
 
     print(rows[161])

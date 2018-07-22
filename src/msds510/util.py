@@ -5,6 +5,7 @@ numbers = "0123456789"
 
 
 def get_month(input1):
+    """The get_month function takes an argument and returns the numerical month."""
     if input1[0] in numbers:
         month_number = datetime.datetime.strptime(input1, '%d-%b').month
         print(month_number)
@@ -16,6 +17,7 @@ def get_month(input1):
 
 
 def get_date_joined(input2, input3):
+    """The get_date_joined function takes two arguments, a year, and the month value and returns a date."""
     yearss = int(input2)
 
     if input3[0] in numbers:
@@ -34,6 +36,8 @@ def get_date_joined(input2, input3):
 
 
 def days_since_joined(input4, input5):
+    """The function days_since_joined takes two arguments, a year and month.
+    Then it gives the difference of today versus that date and provides it in days."""
     yearss = int(input4)
 
     if input5[0] in numbers:
