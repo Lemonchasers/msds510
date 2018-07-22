@@ -8,6 +8,11 @@ input1 = sys.argv[1]
 output2 = sys.argv[2]
 
 def main(input1,output2):
+    """The main function within this file takes a csv,
+    reads it into a dictionary, cleans up the field names,
+    and writes the file out. The function takes two arguments.
+    The directory of the csv file to read in and the directory
+    to read out."""
     with open(input1,'r') as c:
         lines = c.readlines()
 
